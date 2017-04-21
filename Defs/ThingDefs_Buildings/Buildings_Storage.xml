@@ -134,68 +134,6 @@
 	</comps>
 </ThingDef>
 
-	  <!-- Medicine Cabinet -->
-	  
- <ThingDef ParentName="ArtableFurnitureBase">
-    <defName>MedicineCabinet</defName>
-    <label>medicine cabinet</label>
- <thingClass>Building_Storage</thingClass>
-    <graphicData>
-      <texPath>Storage/Rack</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(4.5,2)</drawSize>
-    </graphicData>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <fillPercent>0.4</fillPercent>
-    <castEdgeShadows>true</castEdgeShadows>
-    <stuffCategories>
-      <li>Metallic</li>
-      <li>Woody</li>
-      <li>Stony</li>
-    </stuffCategories>
-    <costStuffCount>50</costStuffCount>
-    <statBases>
-      <Beauty>1</Beauty>
-      <MaxHitPoints>100</MaxHitPoints>
-      <Mass>8</Mass>
-      <WorkToBuild>1200</WorkToBuild>
-      <Flammability>1.0</Flammability>
-    </statBases>
-    <description>A cabinet to put medicine and drugs in.</description>
-    <size>(3,1)</size>
-    <building>
-      <preventDeterioration>true</preventDeterioration>
-      <fixedStorageSettings>
-        <filter>
-          <categories>
-            <li>Medicine</li>
-            <li>Drugs</li>
-  		  </categories>
-        </filter>
-      </fixedStorageSettings>
-      <defaultStorageSettings>
-        <priority>Important</priority>
-	     <filter>
-          <categories>
-            <li>Medicine</li>
-            <li>Drugs</li>
-  		  </categories>
-        </filter>
-      </defaultStorageSettings>
-    </building>
-    <inspectorTabs>
-      <li>ITab_Storage</li>
-    </inspectorTabs>
-    <staticSunShadowHeight>0.5</staticSunShadowHeight>
-    <surfaceType>Item</surfaceType>
-	<comps>
-			<li Class="CompProperties_RoomIdentifier">
-				<roomStat>Impressiveness</roomStat>
-			</li>
-	</comps>
-</ThingDef>
-
 
   <!-- Crate -->
 
