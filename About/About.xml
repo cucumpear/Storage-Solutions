@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Storage Solutions</name>
+  <author>cucumpear</author>
+  <targetVersion>0.16.1393</targetVersion>
+  <description>A number of basic shelves and crates for storing items. When building general-purpose shelving please remember to enable the items you want to store.
+  Also includes a nesting box for eggs. It will hold both fertilized and unfertilized eggs, with a default of fetilized at critical importance. If you place it next to a table people might even sit on the eggs.</description>
+</ModMetaData>

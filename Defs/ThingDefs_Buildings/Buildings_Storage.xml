@@ -1,0 +1,705 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+	  <!-- Nesting Box -->
+
+	<ThingDef ParentName="FurnitureBase">
+		<defName>NestingBox</defName>
+		<ThingClass>Building_Storage</ThingClass>
+		<label>nesting box</label>
+		<description>A nesting box for animal eggs.</description>
+		<rotatable>true</rotatable>
+		<fillPercent>0.25</fillPercent>
+		<PathCost>40</PathCost>
+		<CastEdgeShadows>false</CastEdgeShadows>
+		<Passability>PassThroughOnly</Passability>
+		<graphicData>
+			<texPath>Storage/NestingBox</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+      <damageData>
+        <rect>(0.05,0.05,0.9,0.9)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+		</graphicData>
+		    <building>
+      <preventDeterioration>true</preventDeterioration>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>EggsUnfertilized</li>
+            <li>EggsFertilized</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Critical</priority>
+        <filter>
+          <categories>
+            <li>EggsFertilized</li>
+		  </categories>
+        </filter>
+      </defaultStorageSettings>
+	  <isSittable>true</isSittable>
+    </building>
+	<socialPropernessMatters>true</socialPropernessMatters>
+	<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+	</stuffCategories>
+	<costStuffCount>45</costStuffCount>
+	<AltitudeLayer>Building</AltitudeLayer>
+	<statBases>
+			<Beauty>1</Beauty>
+			<MaxHitPoints>140</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>650</WorkToBuild>
+      <Mass>10</Mass>
+	</statBases>
+	<comps>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+	</comps>
+	<inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <designationCategory>Furniture</designationCategory>
+    <surfaceType>Item</surfaceType>
+	</ThingDef>
+
+	  <!-- New Medicine Cabinet -->
+	  
+ <ThingDef ParentName="ArtableFurnitureBase">
+    <defName>CCPSS_MedicineCabinet</defName>
+    <label>medicine cabinet</label>
+ <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Storage/Rack</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4.5,2)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
+    <statBases>
+      <Beauty>1</Beauty>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>8</Mass>
+      <WorkToBuild>1200</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>A cabinet to put medicine and drugs in.</description>
+    <size>(3,1)</size>
+    <building>
+      <preventDeterioration>true</preventDeterioration>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+            <li>Drugs</li>
+  		  </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+	     <filter>
+          <categories>
+            <li>Medicine</li>
+            <li>Drugs</li>
+  		  </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+	<comps>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+	</comps>
+</ThingDef>
+
+	  <!-- Medicine Cabinet -->
+	  
+ <ThingDef ParentName="ArtableFurnitureBase">
+    <defName>MedicineCabinet</defName>
+    <label>medicine cabinet</label>
+ <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Storage/Rack</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4.5,2)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
+    <statBases>
+      <Beauty>1</Beauty>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>8</Mass>
+      <WorkToBuild>1200</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>A cabinet to put medicine and drugs in.</description>
+    <size>(3,1)</size>
+    <building>
+      <preventDeterioration>true</preventDeterioration>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+            <li>Drugs</li>
+  		  </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+	     <filter>
+          <categories>
+            <li>Medicine</li>
+            <li>Drugs</li>
+  		  </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+	<comps>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+	</comps>
+</ThingDef>
+
+
+  <!-- Crate -->
+
+	<ThingDef ParentName="FurnitureBase">
+		<defName>Crate</defName>
+		<ThingClass>Building_Storage</ThingClass>
+		<label>crate</label>
+		<description>A simple box for storing items.</description>
+		<rotatable>true</rotatable>
+		<fillPercent>0.25</fillPercent>
+		<PathCost>40</PathCost>
+		<CastEdgeShadows>true</CastEdgeShadows>
+		<Passability>PassThroughOnly</Passability>
+		<graphicData>
+			<texPath>Storage/Crate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.05,0.05,0.9,0.9)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+		</graphicData>
+		    <building>
+      <preventDeterioration>true</preventDeterioration>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Foods</li>
+            <li>Manufactured</li>
+            <li>ResourcesRaw</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+      </defaultStorageSettings>
+	  </building>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+		<AltitudeLayer>Building</AltitudeLayer>
+		<statBases>
+			<Beauty>1</Beauty>
+			<MaxHitPoints>140</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>650</WorkToBuild>
+      <Mass>10</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+		</comps>
+	<inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <designationCategory>Furniture</designationCategory>
+    <surfaceType>Item</surfaceType>
+	</ThingDef>
+
+	  <!-- Shelf -->
+	  
+ <ThingDef ParentName="FurnitureBase">
+    <defName>Shelf</defName>
+    <label>shelf</label>
+    <thingClass>Building_Storage</thingClass>
+	<rotatable>true</rotatable>
+    <graphicData>
+      <texPath>Storage/Shelf</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,3)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
+    <statBases>
+      <Beauty>1</Beauty>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>8</Mass>
+      <WorkToBuild>1050</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>A shelf. You can put things on it.</description>
+    <size>(1,3)</size>
+    <building>
+      <preventDeterioration>true</preventDeterioration>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+            <li>Apparel</li>
+            <li>Foods</li>
+            <li>Items</li>
+            <li>Manufactured</li>
+            <li>ResourcesRaw</li>
+  		  </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+      </defaultStorageSettings>
+    </building>
+	<comps>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+	</comps>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+  </ThingDef>
+	  
+	  <!-- LongShelf -->
+	
+  <ThingDef ParentName="FurnitureBase">
+    <defName>LongShelf</defName>
+    <label>long shelf</label>
+    <thingClass>Building_Storage</thingClass>
+	<rotatable>true</rotatable>
+    <graphicData>
+      <texPath>Storage/Shelf</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,4)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>45</costStuffCount>
+    <statBases>
+      <Beauty>1</Beauty>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>8</Mass>
+      <WorkToBuild>1200</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>A long shelf. You can put things on it.</description>
+    <size>(1,4)</size>
+    <building>
+      <preventDeterioration>true</preventDeterioration>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+            <li>Apparel</li>
+            <li>Foods</li>
+            <li>Items</li>
+            <li>Manufactured</li>
+            <li>ResourcesRaw</li>
+  		  </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+      </defaultStorageSettings>
+    </building>
+	<comps>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+	</comps>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+  </ThingDef>
+  
+	  <!-- Rack -->
+	  
+ <ThingDef ParentName="ArtableFurnitureBase">
+    <defName>Rack</defName>
+    <label>rack</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Storage/Rack</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,2)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>45</costStuffCount>
+    <statBases>
+      <Beauty>1</Beauty>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>8</Mass>
+      <WorkToBuild>1200</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>A rack. You can put things on it.</description>
+    <size>(2,1)</size>
+    <building>
+      <preventDeterioration>true</preventDeterioration>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+            <li>Apparel</li>
+            <li>Foods</li>
+            <li>Items</li>
+            <li>Manufactured</li>
+            <li>ResourcesRaw</li>
+  		  </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+      </defaultStorageSettings>
+    </building>
+	<comps>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+	</comps>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+  </ThingDef>
+  	  
+	  <!-- LongRack -->
+	  
+	   <ThingDef ParentName="ArtableFurnitureBase">
+    <defName>LongRack</defName>
+    <label>long rack</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Storage/Rack</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4.5,2)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
+    <statBases>
+      <Beauty>1</Beauty>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>8</Mass>
+      <WorkToBuild>1200</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>A long rack. You can put things on it.</description>
+    <size>(3,1)</size>
+    <building>
+      <preventDeterioration>true</preventDeterioration>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+            <li>Apparel</li>
+            <li>Foods</li>
+            <li>Items</li>
+            <li>Manufactured</li>
+            <li>ResourcesRaw</li>
+  		  </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+      </defaultStorageSettings>
+    </building>
+	<comps>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+	</comps>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+  </ThingDef>
+  
+	
+	  <!-- ResourceRack -->
+	
+ <ThingDef ParentName="FurnitureBase">
+    <defName>ResourceRack</defName>
+    <label>resource rack</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Storage/ResourceRack</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,3)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>55</costStuffCount>
+    <statBases>
+      <Beauty>1</Beauty>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Mass>8</Mass>
+      <WorkToBuild>1500</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>A sturdy rack. Will take a beating.</description>
+    <size>(1,2)</size>
+    <building>
+      <preventDeterioration>true</preventDeterioration>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+            <li>Apparel</li>
+            <li>Foods</li>
+            <li>Items</li>
+            <li>Manufactured</li>
+            <li>ResourcesRaw</li>
+  		  </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>ResourcesRaw</li>
+          </categories>
+        </filter>
+   	  </defaultStorageSettings>
+    </building>
+	<comps>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+	</comps>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+  </ThingDef>	
+	
+	
+ <!-- Strongbox --> 
+ 
+ <ThingDef ParentName="ArtableFurnitureBase">
+    <defName>Strongbox</defName>
+    <label>strongbox</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Storage/Strongbox</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.5,2)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
+    <statBases>
+      <Beauty>1</Beauty>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Mass>8</Mass>
+      <WorkToBuild>1500</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>A small strongbox to hold your valuables.</description>
+    <size>(1,1)</size>
+    <building>
+      <preventDeterioration>true</preventDeterioration>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+            <li>Apparel</li>
+            <li>Foods</li>
+            <li>Items</li>
+            <li>Manufactured</li>
+            <li>ResourcesRaw</li>
+  		  </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <thingDefs>
+            <li>Gold</li>
+            <li>Silver</li>
+          </thingDefs>
+        </filter>
+   	  </defaultStorageSettings>
+    </building>
+	<comps>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+	</comps>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+  </ThingDef>
+ 
+ <!-- LargeStrongbox -->
+  <ThingDef ParentName="ArtableFurnitureBase">
+    <defName>LargeStrongbox</defName>
+    <label>large strongbox</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Storage/Strongbox</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,4)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>60</costStuffCount>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Beauty>1</Beauty>
+      <Mass>8</Mass>
+      <WorkToBuild>1700</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>A strongbox to hold your valuables.</description>
+    <size>(1,2)</size>
+    <building>
+      <preventDeterioration>true</preventDeterioration>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+            <li>Apparel</li>
+            <li>Foods</li>
+            <li>Items</li>
+            <li>Manufactured</li>
+            <li>ResourcesRaw</li>
+  		  </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <thingDefs>
+            <li>Gold</li>
+            <li>Silver</li>
+          </thingDefs>
+        </filter>
+   	  </defaultStorageSettings>
+    </building>
+	<comps>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+	</comps>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+  </ThingDef>	
+ 
+	
+</Buildings>
