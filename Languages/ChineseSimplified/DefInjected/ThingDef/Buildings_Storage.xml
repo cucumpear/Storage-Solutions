@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Nesting Box -->
+
+  <NestingBox.label>孵化箱</NestingBox.label>
+  <NestingBox.description>能够装动物的卵的箱子。</NestingBox.description>
+  <NestingBox_Blueprint.label>孵化箱（蓝图）</NestingBox_Blueprint.label>
+  <NestingBox_Blueprint_Install.label>孵化箱（蓝图）</NestingBox_Blueprint_Install.label>
+  <NestingBox_Frame.label>孵化箱（建造中）</NestingBox_Frame.label>
+
+
+  <!-- Medicine Cabinet -->
+
+  <MedicineCabinet.label>药物柜</MedicineCabinet.label>
+  <MedicineCabinet.description>能够放置药物的柜子。</MedicineCabinet.description>
+  <MedicineCabinet_Blueprint.label>药物柜（蓝图）</MedicineCabinet_Blueprint.label>
+  <MedicineCabinet_Blueprint_Install.label>药物柜（蓝图）</MedicineCabinet_Blueprint_Install.label>
+  <MedicineCabinet_Frame.label>药物柜（建造中）</MedicineCabinet_Frame.label>
+
+
+  <!-- Crate -->
+
+  <Crate.label>箱子</Crate.label>
+  <Crate.description>可以存放物品的简易箱子。</Crate.description>
+  <Crate_Blueprint.label>箱子（蓝图）</Crate_Blueprint.label>
+  <Crate_Blueprint_Install.label>箱子（蓝图）</Crate_Blueprint_Install.label>
+  <Crate_Frame.label>箱子（建造中）</Crate_Frame.label>
+
+
+  <!-- Shelf -->
+
+  <Shelf.label>架子</Shelf.label>
+  <Shelf.description>可以放置物品的架子。</Shelf.description>
+  <Shelf_Blueprint.label>架子（蓝图）</Shelf_Blueprint.label>
+  <Shelf_Blueprint_Install.label>架子（蓝图）</Shelf_Blueprint_Install.label>
+  <Shelf_Frame.label>架子（建造中）</Shelf_Frame.label>
+
+
+  <!-- LongShelf -->
+
+  <LongShelf.label>长架子</LongShelf.label>
+  <LongShelf.description>加长了的架子，你可以放东西在上面。</LongShelf.description>
+  <LongShelf_Blueprint.label>长架子（蓝图）</LongShelf_Blueprint.label>
+  <LongShelf_Blueprint_Install.label>长架子（蓝图）</LongShelf_Blueprint_Install.label>
+  <LongShelf_Frame.label>长架子（建造中）</LongShelf_Frame.label>
+
+
+  <!-- Rack -->
+
+  <Rack.label>货架</Rack.label>
+  <Rack.description>可以存放东西的货架。</Rack.description>
+  <Rack_Blueprint.label>货架（蓝图）</Rack_Blueprint.label>
+  <Rack_Blueprint_Install.label>货架（蓝图）</Rack_Blueprint_Install.label>
+  <Rack_Frame.label>货架（建造中）</Rack_Frame.label>
+
+
+  <!-- LongRack -->
+
+  <LongRack.label>长货架</LongRack.label>
+  <LongRack.description>加长了的货架，你可以存放东西。</LongRack.description>
+  <LongRack_Blueprint.label>长货架（蓝图）</LongRack_Blueprint.label>
+  <LongRack_Blueprint_Install.label>长货架（蓝图）</LongRack_Blueprint_Install.label>
+  <LongRack_Frame.label>长货架（建造中）</LongRack_Frame.label>
+
+
+  <!-- ResourceRack -->
+
+  <ResourceRack.label>资源货架</ResourceRack.label>
+  <ResourceRack.description>更加结实的货架。</ResourceRack.description>
+  <ResourceRack_Blueprint.label>资源货架（蓝图）</ResourceRack_Blueprint.label>
+  <ResourceRack_Blueprint_Install.label>资源货架（蓝图）</ResourceRack_Blueprint_Install.label>
+  <ResourceRack_Frame.label>资源货架（建造中）</ResourceRack_Frame.label>
+
+
+  <!-- Strongbox -->
+
+  <Strongbox.label>保险柜</Strongbox.label>
+  <Strongbox.description>可以存放你贵重物品的保险柜。</Strongbox.description>
+  <Strongbox_Blueprint.label>保险柜（蓝图）</Strongbox_Blueprint.label>
+  <Strongbox_Blueprint_Install.label>保险柜（蓝图）</Strongbox_Blueprint_Install.label>
+  <Strongbox_Frame.label>保险柜（建造中）</Strongbox_Frame.label>
+
+
+  <!-- LargeStrongbox -->
+
+  <LargeStrongbox.label>大保险柜</LargeStrongbox.label>
+  <LargeStrongbox.description>可以存放更多贵重物品的大保险柜。</LargeStrongbox.description>
+  <LargeStrongbox_Blueprint.label>大保险柜（蓝图）</LargeStrongbox_Blueprint.label>
+  <LargeStrongbox_Blueprint_Install.label>大保险柜（蓝图）</LargeStrongbox_Blueprint_Install.label>
+  <LargeStrongbox_Frame.label>大保险柜（建造中）</LargeStrongbox_Frame.label>
+
+
+</LanguageData>
