@@ -4,7 +4,7 @@
 	  <!-- Nesting Box -->
 
 	<ThingDef ParentName="FurnitureBase">
-		<defName>NestingBox</defName>
+		<defName>CCPSS_NestingBox</defName>
 		<ThingClass>Building_Storage</ThingClass>
 		<label>nesting box</label>
 		<description>A nesting box for animal eggs.</description>
@@ -25,7 +25,8 @@
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
 		</graphicData>
-		    <building>
+	 <building>
+	  <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
       <preventDeterioration>true</preventDeterioration>
       <fixedStorageSettings>
         <filter>
@@ -103,6 +104,7 @@
     <description>A cabinet to put medicine and drugs in.</description>
     <size>(3,1)</size>
     <building>
+	  <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
       <preventDeterioration>true</preventDeterioration>
       <fixedStorageSettings>
         <filter>
@@ -138,7 +140,7 @@
   <!-- Crate -->
 
 	<ThingDef ParentName="FurnitureBase">
-		<defName>Crate</defName>
+		<defName>CCPSS_Crate</defName>
 		<ThingClass>Building_Storage</ThingClass>
 		<label>crate</label>
 		<description>A simple box for storing items.</description>
@@ -159,6 +161,7 @@
       </damageData>
 		</graphicData>
 		    <building>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
       <preventDeterioration>true</preventDeterioration>
       <fixedStorageSettings>
         <filter>
@@ -202,7 +205,7 @@
 	  <!-- Shelf -->
 	  
  <ThingDef ParentName="FurnitureBase">
-    <defName>Shelf</defName>
+    <defName>CCPSS_Shelf</defName>
     <label>shelf</label>
     <thingClass>Building_Storage</thingClass>
 	<rotatable>true</rotatable>
@@ -231,6 +234,7 @@
     <description>A shelf. You can put things on it.</description>
     <size>(1,3)</size>
     <building>
+	  <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
       <preventDeterioration>true</preventDeterioration>
       <fixedStorageSettings>
         <filter>
@@ -263,7 +267,7 @@
 	  <!-- LongShelf -->
 	
   <ThingDef ParentName="FurnitureBase">
-    <defName>LongShelf</defName>
+    <defName>CCPSS_LongShelf</defName>
     <label>long shelf</label>
     <thingClass>Building_Storage</thingClass>
 	<rotatable>true</rotatable>
@@ -292,6 +296,7 @@
     <description>A long shelf. You can put things on it.</description>
     <size>(1,4)</size>
     <building>
+	  <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
       <preventDeterioration>true</preventDeterioration>
       <fixedStorageSettings>
         <filter>
@@ -324,7 +329,7 @@
 	  <!-- Rack -->
 	  
  <ThingDef ParentName="ArtableFurnitureBase">
-    <defName>Rack</defName>
+    <defName>CCPSS_Rack</defName>
     <label>rack</label>
     <thingClass>Building_Storage</thingClass>
     <graphicData>
@@ -352,6 +357,7 @@
     <description>A rack. You can put things on it.</description>
     <size>(2,1)</size>
     <building>
+	  <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
       <preventDeterioration>true</preventDeterioration>
       <fixedStorageSettings>
         <filter>
@@ -384,7 +390,7 @@
 	  <!-- LongRack -->
 	  
 	   <ThingDef ParentName="ArtableFurnitureBase">
-    <defName>LongRack</defName>
+    <defName>CCPSS_LongRack</defName>
     <label>long rack</label>
     <thingClass>Building_Storage</thingClass>
     <graphicData>
@@ -412,6 +418,7 @@
     <description>A long rack. You can put things on it.</description>
     <size>(3,1)</size>
     <building>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
       <preventDeterioration>true</preventDeterioration>
       <fixedStorageSettings>
         <filter>
@@ -445,7 +452,7 @@
 	  <!-- ResourceRack -->
 	
  <ThingDef ParentName="FurnitureBase">
-    <defName>ResourceRack</defName>
+    <defName>CCPSS_ResourceRack</defName>
     <label>resource rack</label>
     <thingClass>Building_Storage</thingClass>
     <graphicData>
@@ -473,6 +480,7 @@
     <description>A sturdy rack. Will take a beating.</description>
     <size>(1,2)</size>
     <building>
+	  <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
       <preventDeterioration>true</preventDeterioration>
       <fixedStorageSettings>
         <filter>
@@ -511,7 +519,7 @@
  <!-- Strongbox --> 
  
  <ThingDef ParentName="ArtableFurnitureBase">
-    <defName>Strongbox</defName>
+    <defName>CCPSS_Strongbox</defName>
     <label>strongbox</label>
     <thingClass>Building_Storage</thingClass>
     <graphicData>
@@ -539,6 +547,7 @@
     <description>A small strongbox to hold your valuables.</description>
     <size>(1,1)</size>
     <building>
+	  <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
       <preventDeterioration>true</preventDeterioration>
       <fixedStorageSettings>
         <filter>
@@ -576,7 +585,7 @@
  
  <!-- LargeStrongbox -->
   <ThingDef ParentName="ArtableFurnitureBase">
-    <defName>LargeStrongbox</defName>
+    <defName>CCPSS_LargeStrongbox</defName>
     <label>large strongbox</label>
     <thingClass>Building_Storage</thingClass>
     <graphicData>
@@ -604,6 +613,7 @@
     <description>A strongbox to hold your valuables.</description>
     <size>(1,2)</size>
     <building>
+	  <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
       <preventDeterioration>true</preventDeterioration>
       <fixedStorageSettings>
         <filter>

@@ -13,7 +13,7 @@
     <filthLeaving>BuildingRubble</filthLeaving>
   </ThingDef>
   
-<ThingDef Name="FurnitureBase" ParentName="BuildingBase" Abstract="True">
+    <ThingDef Name="FurnitureBase" ParentName="BuildingBase" Abstract="True">
     <comps>
       <li>
         <compClass>CompQuality</compClass>
@@ -32,11 +32,12 @@
         <nameMaker>ArtName_Furniture</nameMaker>
         <descriptionMaker>ArtDescription_Furniture</descriptionMaker>
         <minQualityForArtistic>Excellent</minQualityForArtistic>
-      </li>
+			</li>
     </comps>
     <inspectorTabs>
       <li>ITab_Art</li>
     </inspectorTabs>
   </ThingDef>
-  
+
+
 </Defs>
