@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Buildings>
+<Defs>
 
 	  <!-- Nesting Box -->
 
-	<ThingDef ParentName="FurnitureBase">
+	<ThingDef ParentName="ArtableFurnitureBase">
 		<defName>CCPSS_NestingBox</defName>
-		<ThingClass>Building_Storage</ThingClass>
+		<thingClass>Building_Storage</thingClass>
 		<label>nesting box</label>
 		<description>A nesting box for animal eggs.</description>
 		<rotatable>true</rotatable>
 		<fillPercent>0.25</fillPercent>
-		<PathCost>40</PathCost>
-		<CastEdgeShadows>false</CastEdgeShadows>
-		<Passability>PassThroughOnly</Passability>
+		<pathCost>40</pathCost>
+		<castEdgeShadows>false</castEdgeShadows>
+		<passability>PassThroughOnly</passability>
 		<graphicData>
 			<texPath>Storage/NestingBox</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -27,7 +27,7 @@
 		</graphicData>
 	 <building>
 	  <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
-      <preventDeterioration>true</preventDeterioration>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
       <fixedStorageSettings>
         <filter>
           <categories>
@@ -53,13 +53,13 @@
 			<li>Stony</li>
 	</stuffCategories>
 	<costStuffCount>45</costStuffCount>
-	<AltitudeLayer>Building</AltitudeLayer>
+	<altitudeLayer>Building</altitudeLayer>
 	<statBases>
 			<Beauty>1</Beauty>
 			<MaxHitPoints>140</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 			<WorkToBuild>650</WorkToBuild>
-      <Mass>10</Mass>
+			<Mass>10</Mass>
 	</statBases>
 	<comps>
 			<li Class="CompProperties_RoomIdentifier">
@@ -105,7 +105,7 @@
     <size>(3,1)</size>
     <building>
 	  <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
-      <preventDeterioration>true</preventDeterioration>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
       <fixedStorageSettings>
         <filter>
           <categories>
@@ -139,16 +139,16 @@
 
   <!-- Crate -->
 
-	<ThingDef ParentName="FurnitureBase">
+	<ThingDef ParentName="ArtableFurnitureBase">
 		<defName>CCPSS_Crate</defName>
-		<ThingClass>Building_Storage</ThingClass>
+		<thingClass>Building_Storage</thingClass>
 		<label>crate</label>
 		<description>A simple box for storing items.</description>
 		<rotatable>true</rotatable>
 		<fillPercent>0.25</fillPercent>
-		<PathCost>40</PathCost>
-		<CastEdgeShadows>true</CastEdgeShadows>
-		<Passability>PassThroughOnly</Passability>
+		<pathCost>40</pathCost>
+		<castEdgeShadows>true</castEdgeShadows>
+		<passability>PassThroughOnly</passability>
 		<graphicData>
 			<texPath>Storage/Crate</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -162,7 +162,7 @@
 		</graphicData>
 		    <building>
       <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
-      <preventDeterioration>true</preventDeterioration>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
       <fixedStorageSettings>
         <filter>
           <categories>
@@ -182,7 +182,7 @@
 			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>15</costStuffCount>
-		<AltitudeLayer>Building</AltitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
 			<Beauty>1</Beauty>
 			<MaxHitPoints>140</MaxHitPoints>
@@ -204,9 +204,9 @@
 
 	  <!-- Shelf -->
 	  
- <ThingDef ParentName="FurnitureBase">
+ <ThingDef ParentName="ArtableFurnitureBase">
     <defName>CCPSS_Shelf</defName>
-    <label>shelf</label>
+    <label>medium shelf</label>
     <thingClass>Building_Storage</thingClass>
 	<rotatable>true</rotatable>
     <graphicData>
@@ -235,7 +235,7 @@
     <size>(1,3)</size>
     <building>
 	  <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
-      <preventDeterioration>true</preventDeterioration>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
       <fixedStorageSettings>
         <filter>
           <categories>
@@ -245,6 +245,8 @@
             <li>Items</li>
             <li>Manufactured</li>
             <li>ResourcesRaw</li>
+            <li>Chunks</li>
+            <li>Corpses</li>
   		  </categories>
         </filter>
       </fixedStorageSettings>
@@ -266,7 +268,7 @@
 	  
 	  <!-- LongShelf -->
 	
-  <ThingDef ParentName="FurnitureBase">
+  <ThingDef ParentName="ArtableFurnitureBase">
     <defName>CCPSS_LongShelf</defName>
     <label>long shelf</label>
     <thingClass>Building_Storage</thingClass>
@@ -297,7 +299,7 @@
     <size>(1,4)</size>
     <building>
 	  <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
-      <preventDeterioration>true</preventDeterioration>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
       <fixedStorageSettings>
         <filter>
           <categories>
@@ -307,6 +309,8 @@
             <li>Items</li>
             <li>Manufactured</li>
             <li>ResourcesRaw</li>
+            <li>Chunks</li>
+            <li>Corpses</li>
   		  </categories>
         </filter>
       </fixedStorageSettings>
@@ -358,7 +362,7 @@
     <size>(2,1)</size>
     <building>
 	  <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
-      <preventDeterioration>true</preventDeterioration>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
       <fixedStorageSettings>
         <filter>
           <categories>
@@ -368,6 +372,8 @@
             <li>Items</li>
             <li>Manufactured</li>
             <li>ResourcesRaw</li>
+            <li>Chunks</li>
+            <li>Corpses</li>
   		  </categories>
         </filter>
       </fixedStorageSettings>
@@ -419,7 +425,7 @@
     <size>(3,1)</size>
     <building>
       <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
-      <preventDeterioration>true</preventDeterioration>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
       <fixedStorageSettings>
         <filter>
           <categories>
@@ -429,6 +435,8 @@
             <li>Items</li>
             <li>Manufactured</li>
             <li>ResourcesRaw</li>
+            <li>Chunks</li>
+            <li>Corpses</li>
   		  </categories>
         </filter>
       </fixedStorageSettings>
@@ -481,7 +489,7 @@
     <size>(1,2)</size>
     <building>
 	  <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
-      <preventDeterioration>true</preventDeterioration>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
       <fixedStorageSettings>
         <filter>
           <categories>
@@ -491,6 +499,8 @@
             <li>Items</li>
             <li>Manufactured</li>
             <li>ResourcesRaw</li>
+            <li>Chunks</li>
+            <li>Corpses</li>
   		  </categories>
         </filter>
       </fixedStorageSettings>
@@ -514,7 +524,74 @@
     <staticSunShadowHeight>0.5</staticSunShadowHeight>
     <surfaceType>Item</surfaceType>
   </ThingDef>	
+
+	  <!-- LongResourceRack -->
 	
+ <ThingDef ParentName="FurnitureBase">
+    <defName>CCPSS_LongResourceRack</defName>
+    <label>long resource rack</label>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Storage/ResourceRack</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	<drawSize>(2,4.5)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.6</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>85</costStuffCount>
+    <statBases>
+      <Beauty>1</Beauty>
+      <MaxHitPoints>350</MaxHitPoints>
+      <Mass>12</Mass>
+      <WorkToBuild>1900</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>A sturdy rack. Will take a beating.</description>
+    <size>(1,3)</size>
+    <building>
+	  <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+            <li>Apparel</li>
+            <li>Foods</li>
+            <li>Items</li>
+            <li>Manufactured</li>
+            <li>ResourcesRaw</li>
+            <li>Chunks</li>
+            <li>Corpses</li>
+  		  </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>ResourcesRaw</li>
+          </categories>
+        </filter>
+   	  </defaultStorageSettings>
+    </building>
+	<comps>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+	</comps>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+  </ThingDef>	  
 	
  <!-- Strongbox --> 
  
@@ -548,7 +625,7 @@
     <size>(1,1)</size>
     <building>
 	  <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
-      <preventDeterioration>true</preventDeterioration>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
       <fixedStorageSettings>
         <filter>
           <categories>
@@ -614,7 +691,7 @@
     <size>(1,2)</size>
     <building>
 	  <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
-      <preventDeterioration>true</preventDeterioration>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
       <fixedStorageSettings>
         <filter>
           <categories>
@@ -648,6 +725,195 @@
     <staticSunShadowHeight>0.5</staticSunShadowHeight>
     <surfaceType>Item</surfaceType>
   </ThingDef>	
- 
+
+	  <!-- HDShelf -->
+	  
+ <ThingDef ParentName="ArtableFurnitureBase">
+    <defName>CCPSS_HDShelf</defName>
+    <label>heavy duty shelf</label>
+    <thingClass>Building_Storage</thingClass>
+	<rotatable>true</rotatable>
+    <graphicData>
+      <texPath>Storage/HeavyDutyShelf</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,3)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>45</costStuffCount>
+    <statBases>
+      <Beauty>1</Beauty>
+      <MaxHitPoints>275</MaxHitPoints>
+      <Mass>8</Mass>
+      <WorkToBuild>1400</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>A sturdy shelf. You can put things on it.</description>
+    <size>(1,3)</size>
+    <building>
+	  <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+            <li>Apparel</li>
+            <li>Foods</li>
+            <li>Items</li>
+            <li>Manufactured</li>
+            <li>ResourcesRaw</li>
+            <li>Chunks</li>
+            <li>Corpses</li>
+  		  </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+      </defaultStorageSettings>
+    </building>
+	<comps>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+	</comps>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+  </ThingDef>
+	  
+	  <!-- HDLongShelf -->
 	
-</Buildings>
+  <ThingDef ParentName="ArtableFurnitureBase">
+    <defName>CCPSS_HDLongShelf</defName>
+    <label>long heavy duty shelf</label>
+    <thingClass>Building_Storage</thingClass>
+	<rotatable>true</rotatable>
+    <graphicData>
+      <texPath>Storage/HeavyDutyShelf</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,4)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>55</costStuffCount>
+    <statBases>
+      <Beauty>1</Beauty>
+      <MaxHitPoints>350</MaxHitPoints>
+      <Mass>8</Mass>
+      <WorkToBuild>1750</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>A long sturdy shelf. You can put things on it.</description>
+    <size>(1,4)</size>
+    <building>
+	  <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+            <li>Apparel</li>
+            <li>Foods</li>
+            <li>Items</li>
+            <li>Manufactured</li>
+            <li>ResourcesRaw</li>
+            <li>Chunks</li>
+            <li>Corpses</li>
+  		  </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+      </defaultStorageSettings>
+    </building>
+	<comps>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+	</comps>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+  </ThingDef>
+  
+	  <!-- CorpseLocker -->
+	
+  <ThingDef ParentName="ArtableFurnitureBase">
+    <defName>CCPSS_CorpseLocker</defName>
+    <label>corpse locker</label>
+    <thingClass>Building_Storage</thingClass>
+	<rotatable>true</rotatable>
+    <graphicData>
+      <texPath>Storage/CorpseLocker</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,2)</drawSize>
+    </graphicData>
+    <altitudeLayer>LayingPawn</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>115</costStuffCount>
+    <statBases>
+      <Beauty>1</Beauty>
+      <MaxHitPoints>450</MaxHitPoints>
+      <Mass>8</Mass>
+      <WorkToBuild>1900</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>A place to stash the dead.</description>
+    <size>(3,2)</size>
+    <building>
+	  <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Corpses</li>
+  		  </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>CorpsesHumanlike</li>
+  		  </categories>
+        </filter>
+   	  </defaultStorageSettings>
+    </building>
+	<comps>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+	</comps>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+  </ThingDef>  
+	
+</Defs>
