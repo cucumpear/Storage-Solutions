@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <CCPSS_NestingBox.label>Инкубатор</CCPSS_NestingBox.label>
+  <CCPSS_NestingBox.description>Приспособление для созревания яиц животных и птиц.</CCPSS_NestingBox.description>
+	
+  <CCPSS_MedicineCabinet.label>Мед.шкафчик</CCPSS_MedicineCabinet.label>
+  <CCPSS_MedicineCabinet.description>Шкафчик для хранения лекарственных средств и препаратов.</CCPSS_MedicineCabinet.description>
+	
+  <CCPSS_Crate.label>Ящик</CCPSS_Crate.label>
+  <CCPSS_Crate.description>Простая тара для хранения предметов.</CCPSS_Crate.description>
+	
+  <CCPSS_Shelf.label>Средняя полка</CCPSS_Shelf.label>
+  <CCPSS_Shelf.description>Полка. На неё можно положить что-нибудь.</CCPSS_Shelf.description>
+	
+  <CCPSS_Rack.label>Стеллаж</CCPSS_Rack.label>
+  <CCPSS_Rack.description>Стеллаж. На него можно сложить что-нибудь.</CCPSS_Rack.description>
+	
+  <CCPSS_LongRack.label>Длинный стеллаж</CCPSS_LongRack.label>
+  <CCPSS_LongRack.description>Длинный стеллаж. На него можно сложить что-нибудь.</CCPSS_LongRack.description>
+	
+  <CCPSS_ResourceRack.label>Стеллаж для ресурсов</CCPSS_ResourceRack.label>
+  <CCPSS_ResourceRack.description>Крепкий стеллаж. Переживёт небрежное отношение.</CCPSS_ResourceRack.description>
+	
+  <CCPSS_LongResourceRack.label>Длинный стеллаж для ресурсов</CCPSS_LongResourceRack.label>
+  <CCPSS_LongResourceRack.description>Крепкий стеллаж. Переживёт небрежное отношение.</CCPSS_LongResourceRack.description>
+	
+  <CCPSS_Strongbox.label>Сейф</CCPSS_Strongbox.label>
+  <CCPSS_Strongbox.description>Небольшой сейф для хранения ценностей.</CCPSS_Strongbox.description>
+	
+  <CCPSS_LargeStrongbox.label>Большой сейф</CCPSS_LargeStrongbox.label>
+  <CCPSS_LargeStrongbox.description>Сейф для хранения ценностей.</CCPSS_LargeStrongbox.description>
+	
+  <CCPSS_HDShelf.label>Сверхпрочная полка</CCPSS_HDShelf.label>
+  <CCPSS_HDShelf.description>Крепкая полка. На неё можно положить что-нибудь.</CCPSS_HDShelf.description>
+	
+  <CCPSS_HDLongShelf.label>Длинная сверхпрочная полка</CCPSS_HDLongShelf.label>
+  <CCPSS_HDLongShelf.description>Крепкая длинная полка. На неё можно положить что-нибудь.</CCPSS_HDLongShelf.description>
+	
+  <CCPSS_CorpseLocker.label>Трупный шкаф</CCPSS_CorpseLocker.label>
+  <CCPSS_CorpseLocker.description>Место, где можно спрятать тело.</CCPSS_CorpseLocker.description>
+</LanguageData>
